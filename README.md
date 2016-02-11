@@ -8,8 +8,8 @@ Team Members:
 --------------------------------------------------------------------------------
 Homework 1:
 
-To run:
-java -jar crawler.jar -d <depth> -u <url>
+To run:                                                                                                                                 
+java -jar crawler.jar -d <depth> -u <url>                                                                                               
 
 Example: java -jar crawler.jar -d 2 -u http://youtube.com
 
