@@ -1,4 +1,4 @@
-Team Name: Jay & Rajnish                                                                                                                
+Team Name: Jay & Rajnish                                                                                                                 
 --------------------------------------------------------------------------------
 
 Team Members:                                                                                                                           
