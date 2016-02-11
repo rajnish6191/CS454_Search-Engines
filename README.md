@@ -1,7 +1,7 @@
 Team Name: Jay & Rajnish                                                                                                                
 --------------------------------------------------------------------------------
 
-Team Members:
+Team Members:                                                                                                                           
 1. Rajnish Kumar [CIN: 304470392]                                                                                                                                                                                                               
 2. Jay Purohit [CIN: 304455065]
 
