@@ -16,5 +16,7 @@ jar {
 dependencies {
    compile 'net.sf.jopt-simple:jopt-simple:4.9'
    compile 'org.jsoup:jsoup:1.8.3'
+   compile 'net.sourceforge.jexcelapi:jxl:2.6.12'
+   compile 'org.json:json:20151123'
 
 } 

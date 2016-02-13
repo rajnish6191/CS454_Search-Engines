@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <title></title> 
+  <meta http-equiv="refresh" content="2;url=http://www.target.com/p/-/A-50801410"> 
+  <script>
+			var destinationUrl = "http://www.target.com/p/-/A-50801410";
+			var numRedirects = 0;
+			function LinkDecorator() {};
+			LinkDecorator.prototype.decorate = function(url) {
+				return url;
+			}
+			var linkDecorator = new LinkDecorator();
+			var numAsyncTasks = 1;
+			numAsyncTasks++;
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  var trackerName = 'tracker_smarturl_ga';
+		  ga('create', 'UA-55891715-3', 'auto', {'allowLinker': true, 'name':trackerName});
+		  ga('require', 'displayfeatures');
+		  ga(trackerName + '.send',
+		     'pageview', {
+		     'hitCallback': function() {
+		     	onAsyncTaskComplete();
+		     }
+		  });
+			numAsyncTasks++;
+			function fireRetargetingWhenAvailable() {
+				if (typeof(window.google_trackConversion) == 'function') {
+					var convParams = {};
+					convParams = {
+						google_conversion_id: 1016223674,
+						google_custom_params: {
+							"artist":"Gwen Stefani",
+							"album":"This Is What The Truth Feels Like",
+							"genre":"Pop",
+							"releasePhase":"Pre",
+							"retailer":"Target"
+						},
+						google_remarketing_only: true
+					};
+					window.google_trackConversion(convParams);
+					window.setTimeout(onAsyncTaskComplete, 100);
+				} else {
+					window.setTimeout(fireRetargetingWhenAvailable, 100);
+				}
+			}
+			function onAsyncTaskComplete() {
+				numAsyncTasks--;
+				if (numAsyncTasks <= 0) {
+					onAllAsyncTasksComplete();
+				}
+	   		}
+			function makePixel(url) {
+				var img = document.createElement("img");
+				img.onload = function() {
+					onAsyncTaskComplete();
+				}
+				img.src = url;
+			}
+			function onAllAsyncTasksComplete() {
+				if (numRedirects == 0) {
+										numRedirects++;
+					window.location = linkDecorator.decorate(destinationUrl);
+				}
+			}
+		</script> 
+ </head> 
+ <body> 
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script> 
+  <script type="text/javascript">
+			fireRetargetingWhenAvailable();
+		</script> 
+  <script type="text/javascript">
+			makePixel("https:\/\/www.facebook.com\/tr?id=247987955369814\x26ev=smartURLClick\x26cd[uuid]=495b76db\-0a0c\-404f\-a069\-f663ee55a3ae");
+			window.setTimeout(onAllAsyncTasksComplete, 2000);
+		</script> 
+  <noscript> 
+   <img height="1" width="1" style="border-style:none;" alt="" src="https://www.facebook.com/tr?id=247987955369814&amp;ev=smartURLClick&amp;cd[uuid]=495b76db-0a0c-404f-a069-f663ee55a3ae"> 
+   <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1016223674/?data.artist=Gwen+Stefani&amp;data.album=This+Is+What+The+Truth+Feels+Like&amp;data.genre=Pop&amp;data.releasePhase=Pre&amp;data.retailer=Target&amp;guid=ON&amp;script=0"> 
+  </noscript>   
+ </body>
+</html>
