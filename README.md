@@ -12,3 +12,13 @@ To run:
 Example: java -jar crawler.jar -d 2 -u http://youtube.com
 
 --------------------------------------------------------------------------------
+Homework 2:
+
+To run:                                                                                                                                 
+Example: java -jar crawler.jar -d 2 -u http://youtube.com -e
+
+For Dump:
+Example: java -jar Dumper.jar
+
+--------------------------------------------------------------------------------
+
