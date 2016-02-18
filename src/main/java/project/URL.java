@@ -2,7 +2,6 @@ package project;
 
 public class URL 
 {
-
 	public String URL = "";
 	@Override
 	public String toString() {

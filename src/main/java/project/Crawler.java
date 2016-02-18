@@ -28,6 +28,9 @@ public class Crawler {
 
 	public static void main(String args[]) throws Exception
 	{
+		
+		try
+		{
 		int depth = 2;
 		String url = null;
       
@@ -36,6 +39,7 @@ public class Crawler {
 
         OptionSet options = parser.parse(args);
         
+        // Parse the options for depth and URL
         if(options.has("d") && options.has("u"))
         {
         	url = (String) options.valueOf("u");
@@ -45,11 +49,12 @@ public class Crawler {
         	{
         		System.out.println("Invalid URL Argument");
         	}
+        	
         	Crawler c = new Crawler();
     		Set<String> subLinkList = new LinkedHashSet<String>();
     		subLinkList.add(url);
     		c.addAll(subLinkList);
-    		if(!subLinkList.isEmpty())
+    		if(!subLinkList.isEmpty() && subLinkList!=null )
     		{
     			for(int i = 0; i < depth;i++)
     			{
@@ -62,17 +67,21 @@ public class Crawler {
     				subLinkList.clear();
     				for(String link : tempList)
         			{
+    					if(link!=null)
+    					{		
     					System.out.println(link);
     					c.parseList(c.getVisitedURLList(), subLinkList);
         				subLinkList.addAll(c.crawlPage(link));
-    					
+    					}
         			}
     				c.addAll(subLinkList);
     			}
     			System.out.println("Crawled Link List:");
     			System.out.println(c.getVisitedURLList());
+    		
+    		// Extraction	
     			if ( options.has("e")) {
-					File yourFile = new File("metadata.csv");
+					File yourFile = new File("./metadata/metadata.csv");
 					System.out.println(yourFile.getAbsolutePath());
 					if (!yourFile.exists()) {
 						yourFile.createNewFile();
@@ -91,9 +100,15 @@ public class Crawler {
         else
         {
         	System.out.println("Invalid arguments Specified. Specify -d and -u.");
-        }
-	}
+        	}
+		}catch(Exception ae)
+		{
+			ae.printStackTrace();
+			System.out.println("exception=="+ae.getMessage());
+			}
+		}
 	
+	// Remove the duplicate links from the list
 	public void parseList(Set<String> currentList, Set<String> newList)
 	{
 		for(String url : currentList)
@@ -105,17 +120,16 @@ public class Crawler {
 				{
 					i.remove();
 				}
-			}
-			
+			}	
 		}
-	
 	}
 	
-	
+	// Download the links and respected htmls
 	public Map<String, String> getMetaTags(String url, File oFile, PrintStream printStream) throws IOException
 	{
 		Map<String,String> metaTags = new HashMap<String,String>();
-		
+		try
+		{
 		Document htmlDocumentFromResponse = Jsoup.connect(url).get();
 		
 		//Get a list of Element objects, all of which are href tags
@@ -131,11 +145,17 @@ public class Crawler {
 		}
 		
 		printStream.print("\n");
-		
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			System.out.println("exception=="+e.getMessage());			
+		}
 		return metaTags;
 		
 	}
 	
+	// Crawling
 	public Set<String> crawlPage(String url) throws Exception
 	{
 		Set<String> urlList = new LinkedHashSet<String>();
@@ -148,18 +168,20 @@ public class Crawler {
 		{
 			System.out.println("Error trying to crawl: " + url + " | Skipping page. e=" + e.getMessage());
 		}
-
+		
 		Elements links = doc.select("a[href]");
 		
+		if(links!=null)
+		{
 		for (Element link : links) 
 		{
+			
 			if(!visitedURLList.contains(link.attr("abs:href")))
 			{
 				urlList.add(link.attr("abs:href"));
 			}
         }
-
-		
+		}
 		return urlList;
 	}
 	
@@ -171,7 +193,6 @@ public class Crawler {
 	public Set<String> getVisitedURLList() {
 		return visitedURLList;
 	}
-
 
 	public void setVisitedURLList(Set<String> visitedURLList) {
 		this.visitedURLList = visitedURLList;
