@@ -34,7 +34,7 @@ public class URLCrawler {
 
 	// path to extract archive
 	private static final String prefixExtracted = "extract";
-
+ // Visited URLS
 	private Set<String> visitedURLList;
 	private List<String> urlList;
 	private String filename;
