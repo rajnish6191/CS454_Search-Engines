@@ -130,7 +130,7 @@ public class Indexing {
 		// read from query
 		ScoreDoc[] hits = null;
 		try {
-			
+	// Finding Hits in the docs		
 			IndexReader reader = DirectoryReader.open(dir);
 			IndexSearcher searcher = new IndexSearcher(reader);
 			TopDocs docs = searcher.search(q, 10);
