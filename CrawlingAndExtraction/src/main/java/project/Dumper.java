@@ -12,7 +12,7 @@ public class Dumper {
 
 	// Reading the csv file 
 	public static void main(String[] args) throws IOException {
-    	String csvContent = readFile("./metadata/metadata.csv", Charset.defaultCharset());
+    	String csvContent = readFile("./metadata/attributes.csv", Charset.defaultCharset());
     	
     	JSONArray array = CDL.toJSONArray(csvContent);
         System.out.println(array.toString(2));
