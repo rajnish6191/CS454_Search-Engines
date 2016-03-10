@@ -1,0 +1,31 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+version = '1.0'
+jar {
+    manifest {
+    
+        attributes 'Main-Class': 'org.gradle.Indexer',
+        		   'Implementation-Title': 'Gradle Quickstart',
+                   'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+   compile 'net.sf.jopt-simple:jopt-simple:4.9'
+   compile 'org.jsoup:jsoup:1.8.3'
+   compile 'net.sourceforge.jexcelapi:jxl:2.6.12'
+   compile 'org.json:json:20151123'
+   compile 'org.codehaus.plexus:plexus-archiver:3.0.3'
+   compile 'org.codehaus.plexus:plexus-container-default:1.6'
+   compile 'org.apache.lucene:lucene-analyzers-common:5.4.1'
+   compile 'org.apache.lucene:lucene-queryparser:5.4.1'
+   compile 'log4j:log4j:1.2.17'
+} 
