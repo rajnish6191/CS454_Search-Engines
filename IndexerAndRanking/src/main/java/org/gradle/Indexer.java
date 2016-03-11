@@ -1,12 +1,5 @@
 package org.gradle;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.utils.EngineBooks;
 import org.utils.Indexing;
 import org.utils.URLCrawler;
