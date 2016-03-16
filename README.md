@@ -60,6 +60,7 @@ Functionalities:
 -> Already, we have TF-IDF Score with a weight factor 0.3
 -> Already, we have Page Rank Score with a weight factor 0.7
 -> Finally, we used a formula: (0.3*TF-IDF Score) + (0.7*Page Rank) for Normalization
+
 ------------------------------------------------------------------------------------
 Homework 4: <A Simple User Web Interface>
 * Query the System
@@ -67,6 +68,7 @@ Homework 4: <A Simple User Web Interface>
 * We get result of Rank in desceding order
 * we performed boolean logic also
 * We performed search recommendation also
+
 ------------------------------------------------------------------------------------
 Project: <A Complete Search Engine>
 * Crawling
@@ -76,5 +78,6 @@ Project: <A Complete Search Engine>
 * Ranking with Link Analysis
 * Normalization
 * A User Web Interface
-* A Novel Contribution <Pending>
+* A Novel Contribution <Pending>      
+
 ------------------------------------------------------------------------------------
