@@ -27,20 +27,15 @@ Homework 2: <An Extractor Applpication>
 * Implemented a Data Dump Program
 
 To run:                                                                                                                                 
-Extractor: java -jar crawler.jar -d 2 -u http://youtube.com -e
+Extractor: java -jar crawler.jar -d 2 -u http://www.calstatela.edu -e
 For Dump: java -jar Dumper.jar
 
 ------------------------------------------------------------------------------------
 
 Homework 3: <Indexing and Ranking Application>                                                                                                                           
-* Implemented an Indexer Application
-Functionalities:
--> Crawl the Web Server
--> Download and Pull the Data
--> Able to index wiki small / wiki large / mungee data collection
--> Extract the terms
--> When presented with a term, give back a list of documents with the term of interest 
-
+* Implemented an Indexer Application                                                                                                    Functionalities:
+-> Crawl the Web Server                                                                                                                 -> Download and Pull the Data                                                                                                           -> Able to index wiki small / wiki large / mungee data collection                                                                       -> Extract the terms                                                                                                                    -> When presented with a term, give back a list of documents with the term of interest                                                  
+                                                                                                                                        
 * Implemented TF-IDF Ranking 
 Functionalities:
 -> Calculate TF Score
