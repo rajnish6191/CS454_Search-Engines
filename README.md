@@ -33,7 +33,7 @@ For Dump: java -jar Dumper.jar
 ------------------------------------------------------------------------------------
 
 Homework 3: <Indexing and Ranking Application>                                                                                                                                                                                                                  
-* Implemented an Indexer Application: 
+* Implemented an Indexer Application:                                                                                                   
 -> Crawl the Web Server   
 -> Download and Pull the Data  
 -> Able to index wiki small / wiki large / mungee data collection
