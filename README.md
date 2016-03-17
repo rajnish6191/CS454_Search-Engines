@@ -56,8 +56,8 @@ Homework 3: <Indexing and Ranking Application>
 -> Already, we have Page Rank Score with a weight factor 0.3
 -> Finally, we used a formula: (0.7*TF-IDF Score) + (0.3*Page Rank) for Normalization
 
-*NOTE:
-->Here we have considered weightage for TfIdf more against Link Analysis so its weighting factor is 0.7 and for Page Ranking is 0.3.
+Note:                                                                                                                                     
+-> Here we have considered weightage for TfIdf more against Link Analysis so its weighting factor is 0.7 and for Page Ranking is 0.3.
 
 ------------------------------------------------------------------------------------
 Homework 4: <A Simple User Web Interface>
