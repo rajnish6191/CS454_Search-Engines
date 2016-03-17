@@ -28,7 +28,7 @@ Homework 2: <An Extractor Applpication>
 
 To run:                                                                                                                                 
 Extractor: java -jar crawler.jar -d 2 -u http://www.calstatela.edu -e
-For Dump: java -jar Dumper.jar
+& For Dump: java -jar Dumper.jar
 
 ------------------------------------------------------------------------------------
 
