@@ -73,6 +73,6 @@ Project: <A Complete Search Engine>
 * Ranking with Link Analysis
 * Normalization
 * A User Web Interface
-* A Novel Contribution <Elastic Search>      
+* Elastic Search as a Novel Contribution     
 
 ------------------------------------------------------------------------------------
