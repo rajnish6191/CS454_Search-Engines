@@ -32,10 +32,8 @@ For Dump: java -jar Dumper.jar
 
 ------------------------------------------------------------------------------------
 
-Homework 3: <Indexing and Ranking Application>                                                                                                                           
-* Implemented an Indexer Application                                                                                                    Functionalities:
--> Crawl the Web Server                                                                                                                 -> Download and Pull the Data                                                                                                           -> Able to index wiki small / wiki large / mungee data collection                                                                       -> Extract the terms                                                                                                                    -> When presented with a term, give back a list of documents with the term of interest                                                  
-                                                                                                                                        
+Homework 3: <Indexing and Ranking Application>                                                                                                                                                                                                                  
+* Implemented an Indexer Application                                                                                                       Functionalities:                                                                                                                         -> Crawl the Web Server                                                                                                                  -> Download and Pull the Data                                                                                                            -> Able to index wiki small / wiki large / mungee data collection                                                                        -> Extract the terms                                                                                                                     -> When presented with a term, give back a list of documents with the term of interest                                                    
 * Implemented TF-IDF Ranking 
 Functionalities:
 -> Calculate TF Score
