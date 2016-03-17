@@ -28,36 +28,40 @@ Homework 2: <An Extractor Applpication>
 
 To run:                                                                                                                                 
 Extractor: java -jar crawler.jar -d 2 -u http://www.calstatela.edu -e
-& For Dump: java -jar Dumper.jar
+For Dump: java -jar Dumper.jar
 
 ------------------------------------------------------------------------------------
 
 Homework 3: <Indexing and Ranking Application>                                                                                                                                                                                                                  
-* Implemented an Indexer Application:                                                                                                    Crawl the Web Server :                                                                                                                Download and Pull the Data :                                                                                                           Able to index wiki small / wiki large / mungee data collection  :                                                                        Extract the terms  :                                                                                                                     When presented with a term, give back a list of documents with the term of interest                                                    
-* Implemented TF-IDF Ranking:   
--> Calculate TF Score : 
--> Calculate IDF Score : 
--> Calculate TF-IDF Score : 
--> Associated with a weight factor [0.3] : 
--> Find TF-IDF Rank : 
--> All Extracted terms with score will be stored in Database : 
+* Implemented an Indexer Application:                                                                                                   
+-> Crawl the Web Server-> Download and Pull the Data-> Able to index wiki small / wiki large / mungee data collection-> Extract the terms-> When presented with a term, give back a list of documents with the term of interest                                                    
+* Implemented TF-IDF Ranking:                                                                                                           
+-> Calculate TF Score
+-> Calculate IDF Score
+-> Calculate TF-IDF Score
+-> Associated with a weight factor [0.7]
+-> Find TF-IDF Rank
+-> All Extracted terms with score will be stored in Database
 
-* Implemented Link Analysis Ranking: 
--> Find initial ranking of all documents : 
--> Find all outgoing links : 
--> Find all incoming links : 
--> Find atleast 40 iteration :  
--> Calculate Page Rank : 
--> Associated with a weight factor [0.7] : 
--> All Documents with score will be stored in Database : 
+* Implemented Link Analysis Ranking:                                                                                                    
+-> Find initial ranking of all documents
+-> Find all outgoing links
+-> Find all incoming links
+-> Find atleast 40 iteration 
+-> Calculate Page Rank
+-> Associated with a weight factor [0.3]
+-> All Documents with score will be stored in Database
 
-* Implemented Normalized Score:
--> Already, we have TF-IDF Score with a weight factor 0.3 : 
--> Already, we have Page Rank Score with a weight factor 0.7 : 
--> Finally, we used a formula: (0.3*TF-IDF Score) + (0.7*Page Rank) for Normalization : 
+* Implemented Normalized Score:                                                                                                         
+-> Already, we have TF-IDF Score with a weight factor 0.7
+-> Already, we have Page Rank Score with a weight factor 0.3
+-> Finally, we used a formula: (0.7*TF-IDF Score) + (0.3*Page Rank) for Normalization
+
+Note:                                                                                                                                     
+-> Here we have considered weightage for TfIdf more against Link Analysis so its weighting factor is 0.7 and for Page Ranking is 0.3.
 
 ------------------------------------------------------------------------------------
-Homework 4: <A Simple User Web Interface>: 
+Homework 4: <A Simple User Web Interface>
 * Query the System
 * Return list of documents, TF-IDF Score, Page Rank and Normalized Score
 * We get result of Rank in desceding order
@@ -65,7 +69,7 @@ Homework 4: <A Simple User Web Interface>:
 * We performed search recommendation also
 
 ------------------------------------------------------------------------------------
-Project: <A Complete Search Engine>:
+Project: <A Complete Search Engine>
 * Crawling
 * Extraction
 * Indexing
