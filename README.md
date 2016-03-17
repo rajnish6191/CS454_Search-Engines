@@ -32,34 +32,29 @@ For Dump: java -jar Dumper.jar
 
 ------------------------------------------------------------------------------------
 
-Homework 3: <Indexing and Ranking Application>                                                                                                                           
-* Implemented an Indexer Application                                                                                                    Functionalities:
--> Crawl the Web Server                                                                                                                 -> Download and Pull the Data                                                                                                           -> Able to index wiki small / wiki large / mungee data collection                                                                       -> Extract the terms                                                                                                                    -> When presented with a term, give back a list of documents with the term of interest                                                  
-                                                                                                                                        
+Homework 3: <Indexing and Ranking Application>                                                                                                                                                                                                                  
+* Implemented an Indexer Application                                                                                                       -> Crawl the Web Server                                                                                                                  -> Download and Pull the Data                                                                                                            -> Able to index wiki small / wiki large / mungee data collection                                                                        -> Extract the terms                                                                                                                     -> When presented with a term, give back a list of documents with the term of interest                                                    
 * Implemented TF-IDF Ranking 
-Functionalities:
 -> Calculate TF Score
 -> Calculate IDF Score
 -> Calculate TF-IDF Score
--> Associated with a weight factor [0.3]
+-> Associated with a weight factor [0.7]
 -> Find TF-IDF Rank
 -> All Extracted terms with score will be stored in Database
 
 * Implemented Link Analysis Ranking
-Functionalities:
 -> Find initial ranking of all documents
 -> Find all outgoing links
 -> Find all incoming links
 -> Find atleast 40 iteration 
 -> Calculate Page Rank
--> Associated with a weight factor [0.7]
+-> Associated with a weight factor [0.3]
 -> All Documents with score will be stored in Database
 
 * Implemented Normalized Score
-Functionalities:
--> Already, we have TF-IDF Score with a weight factor 0.3
--> Already, we have Page Rank Score with a weight factor 0.7
--> Finally, we used a formula: (0.3*TF-IDF Score) + (0.7*Page Rank) for Normalization
+-> Already, we have TF-IDF Score with a weight factor 0.7
+-> Already, we have Page Rank Score with a weight factor 0.3
+-> Finally, we used a formula: (0.7*TF-IDF Score) + (0.3*Page Rank) for Normalization
 
 ------------------------------------------------------------------------------------
 Homework 4: <A Simple User Web Interface>
@@ -78,6 +73,6 @@ Project: <A Complete Search Engine>
 * Ranking with Link Analysis
 * Normalization
 * A User Web Interface
-* A Novel Contribution <Pending>      
+* Elastic Search as a Novel Contribution     
 
 ------------------------------------------------------------------------------------
