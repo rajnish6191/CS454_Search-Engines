@@ -73,6 +73,6 @@ Project: <A Complete Search Engine>:
 * Ranking with Link Analysis
 * Normalization
 * A User Web Interface
-* Use of Multiple API's for Search as a Novel Contribution    
+* Use of Google API's for Search and Elastic Map Reduce on Amazon EMR as a Novel Contribution   
 
 ------------------------------------------------------------------------------------
